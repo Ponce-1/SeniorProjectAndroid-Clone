@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232426"
+    tools:context=".RecentLots">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/recentLotButtonL13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/aldrich"
+            android:shadowColor="#979A9C"
+            android:text="@string/lot_13"
+            android:textColor="#B4AB8E"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recentLotsTextView" />
+        app:layout_constraintBottom_toTopOf=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/recentLotButtonG13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/aldrich"
+            android:text="@string/g_13"
+            android:textColor="#B4AB8E"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/recentLotButtonL13"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/recentLotButtonL13"
+            app:layout_constraintTop_toBottomOf="@+id/recentLotButtonL13" />
+
+        <Button
+            android:id="@+id/recentLotButtonG14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/aldrich"
+            android:text="@string/g_14"
+            android:textColor="#B4AB8E"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/recentLotButtonG13"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/recentLotButtonG13"
+            app:layout_constraintTop_toBottomOf="@+id/recentLotButtonG13" />
+
+        <TextView
+            android:id="@+id/recentLotsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:padding="5dp"
+            android:text="@string/recent_parking_lots"
+            android:textColor="#B4AB8E"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="363dp"
+            android:layout_height="3dp"
+            android:background="#B4AB8E"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recentLotsTextView" />
+
+        <Button
+            android:id="@+id/recent_lots_model_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_shape"
+            android:text="model"
+            android:textColor="#B4AB8E"
+            app:layout_constraintEnd_toEndOf="@+id/recentLotButtonG14"
+            app:layout_constraintStart_toStartOf="@+id/recentLotButtonG14"
+            app:layout_constraintTop_toBottomOf="@+id/recentLotButtonG14" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
